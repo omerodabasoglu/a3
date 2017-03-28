@@ -1,8 +1,6 @@
 @extends('layouts.master')
 
-@header('header')
-    results
-@endheader
+
 
 @section('content')
     <h2>CALORIES BURNED WEEKLY<br><span id="calorie">{{ $calorie }}</span></h2>

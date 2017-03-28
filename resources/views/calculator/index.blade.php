@@ -2,7 +2,7 @@
 
 @section('content')
 
-    <form method="GET" action="/">
+    <form method="POST" action="/">
         <fieldset class="form-group">
             <legend>How many days do you workout weekly in average?</legend>
             <label class="control-label" for="days"></label><br>

@@ -23,4 +23,4 @@ if(config('app.env') == 'local') {
 /* Route::get('/', 'welcomeController');*/
 
 Route::get('/', 'CalcController@index');
-Route::post('/', 'CalcController@calculate');
+Route::post('/', 'FormController@calculate');
