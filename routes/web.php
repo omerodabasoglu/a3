@@ -12,12 +12,15 @@
 */
 
 
-Route::get('/', function () {
+/* Route::get('/', function () {
     return view('welcome');
-});
+});*/
 
 if(config('app.env') == 'local') {
     Route::get('/logs', '\Rap2hpoutre\LaravelLogViewer\LogViewerController@index');
 }
 
-Route::get('/', 'WelcomeController');
+/* Route::get('/', 'welcomeController');*/
+
+Route::get('/', 'CalcController@index');
+Route::post('/', 'CalcController@calculate');
