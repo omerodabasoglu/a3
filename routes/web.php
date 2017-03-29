@@ -16,6 +16,10 @@
     return view('welcome');
 });*/
 
+/**
+* Log viewer
+* (only accessible locally)
+*/
 if(config('app.env') == 'local') {
     Route::get('/logs', '\Rap2hpoutre\LaravelLogViewer\LogViewerController@index');
 }
@@ -23,4 +27,4 @@ if(config('app.env') == 'local') {
 /* Route::get('/', 'welcomeController');*/
 
 Route::get('/', 'CalcController@index');
-Route::post('/', 'FormController@calculate');
+Route::post('/results', 'FormController@calculate');

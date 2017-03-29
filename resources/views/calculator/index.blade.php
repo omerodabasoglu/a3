@@ -2,7 +2,8 @@
 
 @section('content')
 
-    <form method="POST" action="/">
+    <form method="POST" action="http://localhost:90/a3/public/results">
+        {{ csrf_field() }}
         <fieldset class="form-group">
             <legend>How many days do you workout weekly in average?</legend>
             <label class="control-label" for="days"></label><br>
@@ -32,7 +33,16 @@
         </fieldset>
         <div class="form-group">
             <input type='submit' class="btn btn-primary" id="submit">
-            <h3 class="btn btn-default" id="reset"><a href='/'>Reset</a></h3>
+
         </div>
     </form>
+
 @endsection
+
+@if(count($errors) > 0)
+    <ul>
+        @foreach($errors->all() as $error)
+            <li>{{ $error }}</li>
+        @endforeach
+    </ul>
+@endif
