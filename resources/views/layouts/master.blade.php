@@ -8,11 +8,13 @@
     <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah%7CUbuntu" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/united/bootstrap.min.css" />
-    <link rel="stylesheet" href="css/calc4.css" />
+    <link rel="stylesheet" href="css/calc8.css" />
 </head>
 <body>
 
-    <header>@yield('header', 'WEIGHT LOSS CALCULATOR')</header>
+    <header>
+        @yield('header', 'WEIGHT LOSS CALCULATOR')
+    </header>
 
     <section>
         @yield('content')

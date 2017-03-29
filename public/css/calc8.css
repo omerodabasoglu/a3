@@ -3,6 +3,17 @@ body {
     margin: auto;
 }
 
+form {
+    width: 100%;
+    margin-right: 10px;
+}
+
+fieldset, legend {
+    padding-left: 5px;
+    padding-top: 5px;
+    float: left;
+}
+
 header {
     background-color: #f1f2f2;
     font-size: 3em;
@@ -17,6 +28,8 @@ header {
     margin: 0 0 20px 0;
 }
 
+
+
 .form-control {
     width: 100px;
 }
@@ -27,36 +40,21 @@ input[type="radio"] {
 
 #cardio {
     text-align: center;
-}
-
-input[type="submit"] {
-    margin-left: 30%;
-    margin-top: 5%;
-    width: 30%;
-    font-size: 2em;
+    font-size: 1.1em;
 }
 
 h2 {
     font-family: 'Gloria Hallelujah';
     background-color: rgba(235, 90, 91, 0.5);
     text-align: center;
-    margin: 20px;
+    margin: auto;
+    margin-top: 20px;
     padding: 20px;
-    border-style: solid;
-    border-color: #414042;
-    border-radius: 35px;
-    font-size: 1.5em;
-    transition: 0.5s;
-    width: 50%;
-    float: left;
-    clear: both;
-}
-
-h2 {
     border-style: dashed;
     border-color: #414042;
     border-radius: 35px;
-    transition: 2s;
+    font-size: 1.5em;
+    width: 80%;
 }
 
 #calorie {
@@ -75,15 +73,31 @@ h2 {
 input[type="submit"] {
     background-color: #f1f2f2;
     color: #414042;
+    margin: auto;
+
+    width: 15%;
+    font-size: 2em;
+    float: right;
+    clear: right;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
+
+
 
 input[type="submit"]:hover {
     background-color: #eb5a5b;
 }
 
+#reset:hover {
+  background-color: #a35a5b;
+
+}
+
 #reset {
-    float: right;
-    background-color: red;
+    margin: 45%;
+    margin-top: 30px;
+    background-color: #eb5a5b;
     font-weight: lighter;
     font-size: 1.5em;
 }
@@ -94,4 +108,11 @@ input[type="submit"]:hover {
 
 #reset a:hover {
     text-decoration: none;
+}
+
+footer {
+    margin: auto;
+    float: right;
+    color: #eb5a5b;
+    text-shadow: 0.8px 0.8px 1.5px #000000;
 }
