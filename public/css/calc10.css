@@ -1,21 +1,29 @@
 body {
     width: 60%;
     margin: auto;
+    background-image: url(jogging.jpeg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
 }
 
 form {
     width: 100%;
     margin-right: 10px;
+    color: #f1f2f2;
+    padding: 70px 10% 100px 0px;
 }
 
 fieldset, legend {
     padding-left: 5px;
     padding-top: 5px;
     float: left;
+    color: #f1f2f2;
 }
 
 header {
-    background-color: #f1f2f2;
+    background-color: rgba(241,242,242,0.7);
     font-size: 3em;
     text-align: center;
     padding: 5%;
@@ -28,8 +36,6 @@ header {
     margin: 0 0 20px 0;
 }
 
-
-
 .form-control {
     width: 100px;
 }
@@ -41,6 +47,7 @@ input[type="radio"] {
 #cardio {
     text-align: center;
     font-size: 1.1em;
+    color: #eb5a5b;
 }
 
 h2 {
@@ -51,10 +58,11 @@ h2 {
     margin-top: 20px;
     padding: 20px;
     border-style: dashed;
-    border-color: #414042;
+    border-color: #f1f2f2;
     border-radius: 35px;
     font-size: 1.5em;
     width: 80%;
+    color: #f1f2f2;
 }
 
 #calorie {
@@ -62,28 +70,26 @@ h2 {
     margin-top: 1em;
     font-family: 'Ubuntu', sans-serif;
     font-weight: bolder;
+    color: #f1f2f2;
 }
 
 #weight {
     font-size: 4em;
     font-family: 'Ubuntu', sans-serif;
     font-weight: bolder;
+    color: #f1f2f2;
 }
 
 input[type="submit"] {
     background-color: #f1f2f2;
     color: #414042;
     margin: auto;
-
-    width: 15%;
-    font-size: 2em;
     float: right;
     clear: right;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    width: 150px;
+    font-size: 2em;
+    padding: 20px 0px;
 }
-
-
 
 input[type="submit"]:hover {
     background-color: #eb5a5b;
@@ -111,8 +117,8 @@ input[type="submit"]:hover {
 }
 
 footer {
-    margin: auto;
     float: right;
-    color: #eb5a5b;
+    clear: left;
+    color: #f1f2f2;
     text-shadow: 0.8px 0.8px 1.5px #000000;
 }
